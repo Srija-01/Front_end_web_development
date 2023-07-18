@@ -1,0 +1,154 @@
+<!-- resume.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        .main{
+            position: initial;
+            background-color: rgb(135, 113, 147);
+            padding-left: 20px;
+            border: 3px solid black;
+            margin: 30px 300px;
+            display: flex;
+            flex: auto;
+            grid-template-columns: 4fr 4fr; 
+            flex-wrap: nowrap;
+        }
+        .main_info{
+            border: 2px solid black;
+            position: initial;
+            padding-left: 10px;
+            float: right;
+            padding-right: 10px;
+            margin: 9px;
+            background-color: rgb(184, 160, 191);
+        }
+        a{
+            color: black;
+            text-size-adjust: larger;
+            font-size: larger;
+            font-style: oblique;
+            font-display: normal;
+        }
+        li{
+            font-variant: normal;
+            font-size: larger;
+            font-stretch: expanded;
+            font-weight: 200;
+            font-style: oblique;
+        }
+        table{
+            border-color: black;
+            border-style: 2px solid; text-align: center; 
+            align-self: center;
+        }
+        p{
+            font-kerning: none;
+            font-weight: 300;
+            font-style: italic;
+            font-weight: 500;
+        }
+        img{
+            border: 2px solid black;
+            column-gap: normal;
+        }
+        .main_info:hover{
+            background-color: rgb(185, 159, 195);
+            filter: brightness(105%);
+            fill-opacity: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img">
+        <header><img style="float: left; border-radius: 100%; border-color: black; padding-top: 10px 10px 10px 10px; border-image-outset: 20%;" src="srija.jpeg" height="150" width="150"></header><br><br><br><br><br><br><br><br><br><p><h3>Address</h3><p>
+        Canal gate<br>
+        C.V.R Canal Gate Vishnu Institute of Technology<br>
+        Vishnupur<br>
+        BHIMAVARAM,ANDHRA PRADESH - 534201<br>
+        India</p><br>
+            <b>Contact-Info</b><br><br>
+            Tel: 7780799160<br>
+            Mail-Id: 21pa1a0534@vishnu.edu.in<br></p>
+        <div class="social-media">
+            <h3><b>Other Platforms</b></h3>
+            <img style="float: left;" src="https://www.citypng.com/public/uploads/preview/-115981405804zwku1bp9s.png" height="35" width="35">&nbsp;&nbsp;<a href="https://www.instagram.com/mrudhula._.srija/">mrudhula._.srija</a><br><br><br>
+            <img style="float: left; padding-left: 8px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUAAAD////f39/p6ekrKyvX19fm5ubJycmioqL5+fn29va0tLQ+Pj6tra2WlpZdXV0fHx/BwcGoqKjw8PCPj49jY2O6urp0dHSdnZ0WFhYyMjJFRUVNTU0JCQl8fHzR0dGEhIRsbGwlJSVTU1M1NTVISEiIiIgEpGRAAAAEnElEQVR4nO2d6XaqMBRGQa0DFHCeaq1U2/d/xFu0617bS3JyMpiE9e21/GfwbAwknAwk6RdZUU2TrjGtiqyRS74+ue9gnJHfDEvfcTikbAy7+w825GmS+Y7BMVlS+A7BMUVS+Q7BMVXSvWbiJ133AwAAAAAAAAAAAAAAAKDGaz5JBSzGvoOzwXkh8mvov/uOz5y+TDBNn3zHZ8xWLpimR98RmvJEGc58R2jKkDLs+Y7QFOIyhGEEwBCG4QNDGIYPDGEYPjCEYfjAEIbhA8P4Dbufp+l+rq2kDDe+IzSGqKZvvuMz51l6r+ntfMdng2KYTVrJhlvfsdnifdBKB8adAAAAAAAAAN1nsDoeT8tyu/w8Hetn39FY5jxe937NiJwsRkX8GZMrL+WbOKcwzGsHWYVDORu1MltepAVX89Zi45W4yKUk05fZ2vYeF2PZzy3F5XYjYanRa3uRjeTfu6dvNXuSy39MrNiTlGpNI9dkfv2OreAk8VlRPyW6ycknpv7/J9SyM9LG2JKjuKp9MxcUFE4Ov7L49e2LYv38cQzJ9cyAPLOCadA7eanJ/se3l3y/BisjCrpjTwOi2H3l3nMr6F8mH8EaTu4Mj7p+DeadAPeGcxNBC9uwOTckb2UUkiY5BMM92YWhMayobg33nEZeiFmr4dRwKl1xpMzCqO131Vq8NN+xI2jYLroy/KpZFytV9EodoOE8qTJLeun/ncAQDFNbNfSGQZPhzNAumf6TfySGLY9jXTPsd95Qv9mPxlB76lI0hmkshsPZ9lRXh6o+rZnPxbod8Icarn9dTKrZxVvh4A17ny2H2c+Uy+vuZ/0ow4Woksl3PLjnJWhDSYP9qlpVNS/Ehxj29+0H+WatdhTNbs0jDMmmTC2Xo9kiPsBQYUN4pSfJYaiGKnf5g8qBFnrPF84N1epWoXIovZFw14aKVWsnH+i5cQjS8KwYBzGMeUXv8cKxofJrJ1SOdwrQkJHpVOiH6w1huDVkJJAU7jWiwVqfhoxAyOF23cSwU0PO+3uIQeWGUXiGrKcBul8TniEvU02uE9TsmLo05J1zuvutt3ecS0NeKp6+mYZnqNqfufFJHk9vwa5DwwXvHUV1fIbM57kqPkPmZXO2fcrcGzLf1/cRnyFzVPM5PkPmvqADclQ8OEPmZGZ6akpwhty0ChlKcIbcpeDkBLHQDCfcUGAIw4cbsucxkbmo0AzZvcjoDNk5h+gM2Zmx6AzZMwtgGJwh+2XnMAzOkP22cxgGZ8geKYJhcIbst/DAEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYWh6WMG6kKl9Q3J5nt6aGXJNnGjSCLmAnr0VCbl4TW+F5YY6rGiZP7W1LH/DHHLrCM3tW4hNfsR1jbiCNbYHkO4Ob7ADpnQ3A8nFNJBdN5nW+ZYqsufJ/aPKnwTM5ZtNb2aCcm/lQC+Uj7kolNz26wQAAAAAAAAAAAAAAAAAgEDh7e8XH9Ok60n/KmGvjY+MItF9v0csZInJ4FsE5Gli4YWlAVOmjWGH/8VmEDu5DjwXVfcajWlVXDeU/AOrm1R+84CfuwAAAABJRU5ErkJggg==" height="30" width="30">&nbsp;&nbsp;<a href="https://www.linkedin.com/in/chikkala-m-lakshmi-sai-srija-a26bb5250/">mrudhula._.srija</a><br><br><br>
+            <img style="padding-left: 8px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-01_tQwkHcdEfv4Jx6VKiIbhrhx0uozN1T9bJ1B2PRQ&s" height="30" width="30">&nbsp;&nbsp;<a href="https://github.com/Srija-01">mrudhula._.srija</a><br><br><hr>
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>Python</li>
+                <li>c</li>
+                <li>java</li>
+            </ul><hr>
+            <h3>Scripted Languages(FrontEnd)</h3>
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Js</li>
+            </ul>
+        </div>
+        </div>
+        <div class="main_info">
+            <h1>Chikkala M Lakshmi Sai Srija</h1><p><i>
+            Hello everyone,my name is Chikkala M Lakshmi Sai Srija,and it's my pleasure to introduce myself to you today.I came from Nidadavole,and I'm currently studying B.Tech.I'm passionate about Hobbies as you can see below and you can check my Graduation and schooling.I'm very happy to share my skills with you.</i></p><hr>
+            <h2>CAREER OBJECTIVE</h2>
+            <p><i>To be the part of an enthusiastic work environment,where I can use my technical skills to accomplish organization goals.</i><br><br><b><u>Experience</u> : Fresher(no experience)</b></p><hr>
+            <h2>Education</h2>
+            <table border="2">
+                <tr>
+                    <td><b>NAME OF THE INSTITUTE</b></td>
+                   <td><b>DEGREE</b></td>
+                   <td><b>PERCENTAGE</b></td>
+                   <td><b>YEAR</b></td>
+                </tr>
+                <tr>
+                    <td>VISHNU INSTITUTE OF TECHNOLOGY</td>
+                    <td>B-Tech</td>
+                    <td>90%</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td>Tirumala Junior Mahila Kalasala</td>
+                    <td>Inter</td>
+                    <td>95.9%</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Vasavi Ideal Public School</td>
+                    <td>CBSE class-10</td>
+                    <td>85%</td>
+                    <td>2019</td>
+                </tr>
+            </table><br><hr>
+            <h2>Projects</h2>
+            <ol><i>
+                <li>Calculator</li>
+                <li>Grocery List</li>
+                <li>Webpage Including Form</li>
+                <li>Personal Portfolio</li>
+            </i></ol><hr>
+            <h2>Soft Skills</h2>
+            <ul><i>
+                <li>Leadership</li>
+                <li>Team work</li>
+                <li>Maintaing Good Communication</li>
+                <li>Self-Motivated</li>
+                <li>Creative Mind</li></i>
+            </ul><hr>
+            <h2>Hobbies</h2>
+            <ul><i>
+                <li>Dancing</li>
+                <li>Playing Ball Badminton</li>
+                <li>Reading Books</li>
+                <li>Solving Puzzles</li></i>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
